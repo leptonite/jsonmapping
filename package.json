@@ -1,0 +1,31 @@
+{
+   "name": "@leptonite/jsonmapping",
+   "version": "0.7.0",
+   "author": "Daniel Faber <mail@daniel-faber.de>",
+   "license": "MIT",
+   "description": "validate/convert json in typescript",
+   "main": "build/index.js",
+   "types": "build/index.d.ts",
+   "scripts": {
+      "build": "tsc",
+      "clean": "rimraf build coverage",
+      "prepack": "npm run clean && npm test && npm run build",
+      "lint": "eslint --ext ts .",
+      "test": "jest --no-cache --coverage"
+   },
+   "keywords": [
+      "json",
+      "typescript"
+   ],
+   "devDependencies": {
+      "@leptonite/eslint-config": "git+https://github.com/leptonite/eslint-config.git",
+      "@typescript-eslint/eslint-plugin": "5.58.0",
+      "@typescript-eslint/parser": "5.58.0",
+      "eslint": "8.38.0",
+      "eslint-plugin-only-warn": "1.1.0",
+      "jest": "29.5.0",
+      "rimraf": "5.0.0",
+      "ts-jest": "29.1.0",
+      "typescript": "5.0.4"
+   }
+}
