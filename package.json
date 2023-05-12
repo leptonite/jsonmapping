@@ -6,6 +6,10 @@
    "description": "validate/convert json in typescript",
    "main": "build/index.js",
    "types": "build/index.d.ts",
+   "repository": {
+      "type": "git",
+      "url": "https://github.com/leptonite/jsonmapping.git"
+   },
    "scripts": {
       "build": "tsc",
       "clean": "rimraf build coverage",
